@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ContentComponent } from './content.component';
 import { SharedModule } from '@core/modules/shared.module';
 import { AccueilModule } from './accueil/accueil.module';
+import { DossierModule } from './dossier/dossier.module';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { AccueilModule } from './accueil/accueil.module';
   exports: [ ContentComponent ],
   imports: [
     SharedModule,
-    AccueilModule
+    AccueilModule,
+    DossierModule
     ]
 })
 export class ContentModule { }
